@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Afacad&family=Kanit:ital,wght@1,100&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Afacad&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Afacad&family=Kanit:ital@1&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    background: url(anasayfa.mp4);
+}
+
+body{
+    background-color: rgb(235, 234, 234);
+    
+}
+
+
+
+.container .navbar{
+    width: 100%;
+    height: 90px;
+    background-color: rgb(138, 21, 21);
+}
+
+.navbar .logo{
+    display:inline-block;
+    position: absolute;
+    margin-left:50px;
+    margin-top: 25px;
+}
+
+.navbar .imza{
+    margin-right: 900px;
+}
+
+.navbar.giris{
+    display:inline-block;
+    margin-left:50px;
+    margin-top: 3px;}
+
+.navbar .logo a{
+    text-decoration: none;
+    font-size: 25px;
+    font-family: sans-serif;
+    color: #f3f3f3;
+}
+
+.navbar ul{
+    float:right;
+    margin-right: 20px;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+}
+
+.navbar ul li a{
+    color:white;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 6px 20px;
+    font-family: kanit;   
+}
+
+.navbar ul li a:hover{
+    background:#641f18;
+    border-radius: 2px;
+}
+.navbar ul li a:active{
+    background:#641f18;
+    border-radius: 2px;
+}
+
+.container .center{
+    position:absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    user-select: none;
+}
+
+.center h2{
+    color: #f3efef;
+    font-size: 30px;
+    font-weight: bold;
+    width: 885px;
+    height: 250px;
+    margin-top: 10px;
+    text-align: center;
+    font-family: "kanit";
+}
+
+.intro {	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: #fff;
+	padding: 0 20px;
+}
+
+.video-container {	position: absolute;
+	top: 15;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: #333;
+}
+
+.video-container video {
+    min-width: 100%;
+	min-height: 100%;
+    position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	object-fit: cover;
+}
+
+.foto{
+    margin-top: 15px;
+}
+
+.range{
+    text-align: center;
+    margin-top: 15px;
+    font-family: kanit;
+    font-size: 50px;
+    color: grey;
+}
+
+h5{
+  text-align: center;
+  font-size: 50px;
+  font-family: Kanit;
+  color: grey;
+  margin-top: px;
+  
+}
+
+.haberdiv{
+   margin-left: 300px;
+   width: 1290px;
+   height: 380px;
+   display: flex;
+   margin-top: 25px;
+}
+
+.haber1{
+    background-color: white;
+    height: 380px;
+    width: 432px;
+    justify-content: space-between;  
+}
+
+.haber1 h1{
+    color: gray;
+    margin-left: 10px;
+}
+
+.haber1 p{
+    font-size: 18px;
+    font-family: arial;
+    text-align: justify;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.haber2{
+    background-color: white;
+    height: 380px;
+    width: 432px;   
+    justify-content: space-between;
+    margin-left: 20px;
+}
+
+.haber2 h1{
+    color: gray;
+    margin-left: 10px;
+}
+
+.haber2 p{
+    font-size: 18px;
+    font-family: arial;
+    text-align: justify;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.haber3{
+    background-color: white;
+    height: 380px;
+    width: 432px;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+
+.haber3 h1{
+    color: gray;
+    margin-left: 10px;
+}
+
+.haber3 p{
+    font-size: 18px;
+    font-family: arial;
+    text-align: justify;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.altkısım{
+    margin-top: 300px;
+    background-color: rgb(31, 29, 29);
+    height: 100px;
+}
+
+.altkısım img{
+    width: 700px;
+    margin-left: 30%;
+    
+}
+
+.altkısım p{
+    color: rgb(155, 152, 152);
+    text-align: center;
+    margin-top: 10px;
+}
+
+.gallery-container {
+    overflow: hidden; /* İçeriği taşan kısımları gösterme */
+  }
+  
+  .gallery {
+    display: flex; /* Resimlerin yatay olarak sıralanmasını sağla */
+    animation: slide 10s linear infinite; /* slide adında bir animasyon tanımla */
+  }
+  
+  @keyframes slide {
+    0% { transform: translateX(0); } /* Başlangıç pozisyonu */
+    100% { transform: translateX(-100%); } /* Bitiş pozisyonu (sola kaydırma) */
+  }
+  
+  .gallery img {
+    width: 100%; /* Resimlerin galeri genişliğine tam olarak sığmasını sağla */
+    height: auto; /* Oranlarını koru */
+  }

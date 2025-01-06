@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DUCATI ILETISIM</title>
+    <link rel="icon" href="/image-video/logokapak.png" type="image/x-icon" />
+    <style>@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Afacad&family=Kanit:ital,wght@1,100&family=Roboto:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Afacad&family=Roboto:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Afacad&family=Kanit:ital@1&family=Roboto:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+        html{
+            background-color: #020202;
+        }
+        
+        
+        .navbar .imza{
+            margin-right: 900px;
+        }
+        
+        
+        
+        
+        .container .navbar{
+            width: 100%;
+            height: 90px;
+            background-color: rgb(138, 21, 21);
+        }
+        
+        .navbar .logo{
+            display:inline-block;
+            margin-left:50px;
+            margin-top: 3px;
+        }
+        
+        
+        .navbar .logo a{
+            text-decoration: none;
+            font-size: 35px;
+            font-family: sans-serif;
+            color: #f3f3f3;
+        }
+        
+        .navbar ul{
+            float:right;
+            margin-right: 20px;
+        }
+        
+        .navbar ul li{
+            list-style: none;
+            display: inline-block;
+            margin: 0 8px;
+            line-height: 80px;
+        }
+        
+        .navbar ul li a{
+            color:white;
+            text-decoration: none;
+            font-size: 25px;
+            padding: 6px 20px;
+            font-family: kanit;   
+        }
+        
+        .navbar ul li a:hover{
+            background:#641f18;
+            border-radius: 2px;
+        }
+        .navbar ul li a:active{
+            background:#641f18;
+            border-radius: 2px;
+        }
+        
+        .container .center{
+            position:absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .center h1{
+            color: rgb(196, 33, 33);
+            font-size: 75px;
+            font-weight: bold;
+            width: 800px;
+            text-align: center;
+            font-family: sans-serif;
+        }
+        .center h2{
+            color: #020202;
+            font-size: 65px;
+            font-weight: bold;
+            width: 885px;
+            margin-top: 10px;
+            text-align: center;
+        }
+        .center h3{
+            color: #ffffff;
+            font-size: 20px;
+            width: 775px;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        
+        .center td,tr{
+            color: #f3f3f3;
+            font-family: kanit;
+            font-size: 25px;
+        }
+        
+        .center form{
+            width: 600px;
+            margin-left: 220px;
+            font-family:sans-serif;
+        }
+        
+        
+        .txt{
+            border-radius: 10px;
+        }
+        
+        
+        </style>
+    
+
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href=""><img src="/image-video/logoüst.png" alt="" width="70px" height="85px"></a>
+            </div>
+            <ul>
+                <li><a href="http://localhost:8080/kullanicilar/" class="imza">Satın al</a></li>
+                <li><a href="http://localhost:8080/index" class="active">Ana Sayfa</a></li>
+                <li><a href="http://localhost:8080/hakkimizda" class="active">Hakkımızda</a></li>               
+                <li><a href="http://localhost:8080/req/signup" class="active">Kayıt ol</a></li>
+                <li><a href="http://localhost:8080/iletisim" class="active">İletişim</a></li>
+                
+            </ul>
+        </div>
+        <div class="center">
+            <h1>Ducati İletişim</h1>
+           
+            <table>
+                <tr>
+                    <td>Adınız : </td>
+                    <td><input type="text" required="required" class="txt"></td>
+                </tr>
+                <tr>
+                    <td>Soyadınız : </td>
+                    <td><input type="text" required="required" class="txt"></td>
+                </tr>
+                <tr>
+                    <td>Email Adresiniz : </td>
+                    <td><input type="email" required="required" class="txt"></td>
+                </tr>
+                
+                <tr>
+                    <td>Cinsiyet : </td>
+                    <td>
+                        <input id="erkekRadio" type="radio" name="cinsiyetRadio" value="Erkek">
+                        <label for="erkekRadio">Erkek</label>
+                        <input id="kadinRadio" type="radio" name="cinsiyetRadio" value="Kadın">
+                        <label for="kadinRadio">Kadın</label>
+                    </td>
+                </tr>
+    
+                <tr>
+                    <td>Doğum Tarihiniz : </td>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="file"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><textarea name="" id="" cols="40" rows="10" placeholder="Mesajınız" required="required"></textarea></td>
+                </tr>
+    
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="Gönder" class="signup-buton">
+                        <input type="reset" value="Temizle" class="signup-buton">
+                    </td>       
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>

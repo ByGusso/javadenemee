@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Kullanıcı Listesi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-image: url(https://images.ctfassets.net/x7j9qwvpvr5s/6bLMinrZ8YogfxgsLXqfHL/78c48265f003059f8124359c2ff8c377/2024-12-20_Multistrada-V2-hero-1600x1000.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        h1 {
+            font-size: 3rem;
+            color: #ffffff;
+            
+            }
+        th, td {
+        color: rgb(255, 255, 255); /* Yazı rengi kırmızı */
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1 class="my-4">Siparişler</h1>
+    <a href="/kullanicilar/yeni" class="btn btn-primary mb-3">Yeni Sipariş Ekle</a>
+    <table class="table table-bordered">
+        <thead class="table-dark">
+            <tr>
+                <th>ID</th>
+                <th>Motosiklet</th>
+                <th>Email</th>
+                <th>İşlemler</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="kullanici : ${kullanicilar}">
+                <td th:text="${kullanici.id}"></td>
+                <td th:text="${kullanici.ad}"></td>
+                <td th:text="${kullanici.email}"></td>
+                <td>
+                    <a th:href="@{/kullanicilar/duzenle/{id}(id=${kullanici.id})}" class="btn btn-warning btn-sm">Düzenle</a>
+                    <a th:href="@{/kullanicilar/sil/{id}(id=${kullanici.id})}" class="btn btn-danger btn-sm">Sil</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
